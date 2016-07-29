@@ -1,0 +1,14 @@
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\bin\Debug\UploaderUI.exe.config
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\bin\Debug\UploaderUI.exe
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\bin\Debug\UploaderUI.pdb
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\UploaderUI.csprojResolveAssemblyReference.cache
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\MainWindow.g.cs
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\App.g.cs
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\UploaderUI_MarkupCompile.cache
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\UploaderUI_MarkupCompile.lref
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\MainWindow.baml
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\UploaderUI.g.resources
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\UploaderUI.Properties.Resources.resources
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\UploaderUI.csproj.GenerateResource.Cache
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\UploaderUI.exe
+c:\soft\Devices\ODROID_C2\Dev\MyRTD2662\UploaderUI\obj\Debug\UploaderUI.pdb

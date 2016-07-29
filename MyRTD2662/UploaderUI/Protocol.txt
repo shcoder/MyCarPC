@@ -1,0 +1,14 @@
+﻿Команды PC->Arduino:
+$V			Получить версию прошивки Arduino
+$T			Тест
+$Ab			Усатносить адрес I2C в b (byte)
+$RR			I2C: ReadReg
+$RW			I2C: WriteReg
+$BRii		Byte Read. i1 = reg, i2 - len
+$BWiib		Byte Write. i1 = reg, i2 - len, b - data
+
+Команды Arduino->PC:
+$Vi.i.i.i.	Ответ на команду $V
+$Mmsg		сообщение в лог на PC
+$Rb			Ответ на сообщение $RR
+$B			Ответ на номанду $BR
