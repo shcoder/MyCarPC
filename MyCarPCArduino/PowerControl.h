@@ -1,15 +1,15 @@
 #define VOLTAGE_PIN A3
 #define VOLTAGE_RATE_MS 100
 
-#define VOLTAGE_LOPOWER 11.5
-#define VOLTAGE_UPPOWER 12
+#define VOLTAGE_LOPOWER 12
+#define VOLTAGE_UPPOWER 12.5
 
 #define POWER_STATUS_OFF 0
 #define POWER_STATUS_ON 1
-#define POWER_ALLOW_STATUS_CHANGE 2000
+#define POWER_ALLOW_STATUS_CHANGE 3000
 #define POWER_CONTROL_PIN 5
 
-const float power_conver_coeff = 886 / 15;
+const float power_conver_coeff = 815.0f / 15.0f;
 
 long voltageLastRefresh;
 long lastPowerStatusON;
@@ -37,8 +37,8 @@ void readVoltage() {
 
 void loopPowerControl() {
   readVoltage();
-  Serial.print("U=");
-  Serial.println(voltage);
+  //Serial.print("U=");
+  //Serial.println(voltage);
   
   uint8_t newPowerStatus = powerStatus;
   if (powerStatus == POWER_STATUS_OFF && (voltage >= VOLTAGE_UPPOWER))
@@ -49,15 +49,15 @@ void loopPowerControl() {
   
     
   if (powerStatus == POWER_STATUS_OFF) {
-    Serial.println("powerStatus = OFF");
+    //Serial.println("powerStatus = OFF");
     if (newPowerStatus == POWER_STATUS_ON && (millis() - lastPowerStatusOFF > POWER_ALLOW_STATUS_CHANGE)) {
-      Serial.println("set new powerstatus = ON");
+      //Serial.println("set new powerstatus = ON");
       powerStatus = POWER_STATUS_ON;
     }
   } else if (powerStatus == POWER_STATUS_ON) {
-    Serial.println("powerStatus = ON");
+    //Serial.println("powerStatus = ON");
     if (newPowerStatus == POWER_STATUS_OFF && (millis() - lastPowerStatusON > POWER_ALLOW_STATUS_CHANGE)) {
-      Serial.println("set new powerstatus = OFF");
+      //Serial.println("set new powerstatus = OFF");
       powerStatus = POWER_STATUS_OFF;
     }
   }

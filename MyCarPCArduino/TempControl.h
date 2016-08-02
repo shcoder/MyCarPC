@@ -27,15 +27,15 @@ bool coolingStatus = false;
 void processTemperature(float t) {
   //Serial.println(t);
   if (coolingStatus) { // охлаждение включено
-    if (t <= 35)
+    if (t <= 40)
       coolingStatus = false;
   } else {             // охлаждение выключено
-    if (t >= 45)
+    if (t >= 50)
       coolingStatus = true;
   }
   digitalWrite(COOLING_PIN, coolingStatus);
-  //Serial.print("c=");
-  //Serial.println(coolingStatus);
+  Serial.print("c=");
+  Serial.println(coolingStatus);
 }
 
 void loopTemp() {

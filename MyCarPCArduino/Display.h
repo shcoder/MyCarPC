@@ -29,7 +29,7 @@ void loopDisplay() {
   uint8_t buf[4] = {0x00, 0x00, 0x00, 0x00};
   
   uint8_t page = millis()/2000%3;
-  // page = 2;
+  //page = 1;
   if (page == 0) { // U xx
     buf[3] = char_U;
     buf[2] = ct[uint8_t(voltage) / 10];
